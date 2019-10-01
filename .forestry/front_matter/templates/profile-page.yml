@@ -1,10 +1,12 @@
 ---
 label: Profile Page
 hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
   label: title
+  hidden: false
 - type: text
   name: subtitle
   label: subtitle
@@ -25,6 +27,15 @@ fields:
     - type: number
       name: weight
       label: weight
+  - name: calendar
+    type: datetime
+    label: calendar
+    description: ''
+    config:
+      required: false
+      date_format: MM/DD/YYYY
+      time_format: hh:mm A ZZ
+      display_utc: false
 - type: text
   name: template
   label: template
